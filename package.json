@@ -4,14 +4,15 @@
   "private": true,
   "main": "main.js",
   "dependencies": {
+    "html-loader": "^0.5.5",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "webpack-target-electron-renderer": "^0.4.0"
   },
   "scripts": {
-    "dev":"electron .",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server --mode development  --hot",
+    "build": "webpack ",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
